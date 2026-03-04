@@ -1,0 +1,268 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "0f7d44ff-a0a9-4214-a69f-2d2c013f5cbb",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello Python!!\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Hello Python!!\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "09a93ea6-12be-4f68-8c46-f9751ea60f9c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello Python!!\n",
+      "None\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = print(\"Hello Python!!\")\n",
+    "print(a) \n",
+    "#이건 입력은 있는데 출력은 없는 것?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "271f0635-6e61-47e8-88bf-b76f4fdc5009",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello Python!!\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = \"Hello Python!!\"\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "c484cd09-a8eb-411a-8406-8fa9171fbb45",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "7\n"
+     ]
+    }
+   ],
+   "source": [
+    "def plus(a,b): #이게 인풋?\n",
+    "    c = a+b\n",
+    "    return c #return : 다음 작업을 위해 필요함. 함수가 아웃풋이 됨. 이게 없으면 함수가 아웃풋이 없는 것\n",
+    "\n",
+    "ans = plus(4,3) \n",
+    "\n",
+    "print(ans)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "6e347d6a-b752-4a3a-a6b6-8826730ba657",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "7\n",
+      "None\n"
+     ]
+    }
+   ],
+   "source": [
+    "def plus(a,b): \n",
+    "    c = a+b\n",
+    "    print(c) #이렇게 되면 뒤에서 c 값을 더이상 사용할 수 없음. 그니까 계산된 7의 값이 뒤에는 영향을 못 준다는건데????\n",
+    "    \n",
+    "ans = plus(4,3) \n",
+    "\n",
+    "print(ans)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "1ead2c2b-4bda-40f5-8f2f-ead708c2fbe9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "28\n"
+     ]
+    }
+   ],
+   "source": [
+    "def plus(a,b):\n",
+    "    c = a+b\n",
+    "    return c \n",
+    "\n",
+    "ans = 4*plus(4,3) #return이 있기에 가능한 작업\n",
+    "\n",
+    "print(ans)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "1d3d0d57-6812-4153-a778-dadbb90b591c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello World!!\n",
+      "Hello World!!\n",
+      "HelloWorld\n",
+      "100\n",
+      "6\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Hello World!!\")\n",
+    "\n",
+    "print('Hello', 'World!!')\n",
+    "\n",
+    "print('Hello'+'World')\n",
+    "\n",
+    "print(100)\n",
+    "\n",
+    "print(2+4) ㅊ"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "09902842-7f5b-4afa-b453-90a6cb823cf7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "10.0"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x=100\n",
+    "y=200\n",
+    "\n",
+    "x**0.5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "bc27c70e-0647-4fd6-a325-bfd17d653c54",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "5"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#변수 선언\n",
+    "x = 105\n",
+    "y = 10\n",
+    "\n",
+    "x//y #몫\n",
+    "x%y #나머지 연산\n",
+    "#정수, 실수 다 가능"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "4a274521-104f-4410-83c5-4f20129c9334",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "원의 반지름 4.0\n",
+      "원의 면적 50.24\n",
+      "원의 둘레 25.12\n"
+     ]
+    }
+   ],
+   "source": [
+    "radius = 4.0\n",
+    "print(\"원의 반지름\", radius)\n",
+    "print(\"원의 면적\", 3.14 * radius * radius)\n",
+    "print(\"원의 둘레\", 2.0 * 3.14 * radius)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "27c42f20-931a-4a19-8465-cdb20e3d52b5",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
